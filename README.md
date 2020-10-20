@@ -5,13 +5,34 @@ A project for learning Java.
 This is a project to help get an understanding of some of the basic functionality of Java programming. It provides a handy way
 to complete the exercises in LearningJava.txt.
 
-## Installing Java
+## Installing Java on your own computer
 
 If you need to install Java, it's available from https://adoptopenjdk.net
 
 You will want to install at least version 14. 
 
 If you have admin access to your computer, use the installer. If you don't (for example, on a school laptop), download the .zip file for Windows here: https://adoptopenjdk.net/releases.html?variant=openjdk14&jvmVariant=hotspot
+
+## 
+Installing AdoptOpenJDK on school laptops is a little different.
+
+1. Go to this link: https://adoptopenjdk.net/releases.html?variant=openjdk14&jvmVariant=hotspot
+2. There are 2 drop-down menus. Select Windowsfor the Operating System and x64 for the architecture
+3. This should show a list of 4 buttons on the right-hand side of the screen. Click the second one, which should say ".zip" on the button, and the text to the left of the button should mention "JDK". This will download the .zip file containing the Java Development Kit.
+4. Open the download folder, right-click on the downloaded .zip file, and select "Extract All..."
+5. Choose a location to extract the files into. I created a folder called JDKs for this.
+6. In the file explorer, open the folder that was created by extracting the .zip file. In my case, that was the directory C:\Users\cpdup\JDKs\jdk-14.0.2+12
+7. Now open Visual Studio Code
+8. Select File -> Preferences -> Settings from the menu
+9. In the settings screen that opens, there is a text box that says "Search settings". Type java home into this text box
+10. The first result of the search should say "Java: Home", and under it there should be a link that says "Edit in settings.json". Click that link
+11. This should open a configuration file, and there will be a line in this configuration file that says "java.home": ""
+12. In the file explorer window from step 6, click on the path bar (just to the right of these arrows: :arrow_left::arrow_right::arrow_up:. This should highlight a line that looks something like this: C:\Users\cpdup\JDKs\jdk-14.0.2+12
+13. Still in the file explorer, hit Control-C to copy this path
+14. Back in Visual Studio, where it says "java.home":"", put your cursor inside the "" after the colon, and hit Control-V to paste the path into that location
+15. Now, you will need to edit the value you just pasted, to change every \ character to \\. The entry should look something like this (with a different user name): "java.home": "C:\\Users\\cpdup\\JDKs\\jdk-14.0.2+12"
+16. Hit Control-S to save the configuration, and then close the settings.json file
+Now you should be able to run Java programs.
 
 ## Installing Visual Studio Code
 
