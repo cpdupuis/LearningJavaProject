@@ -29,7 +29,7 @@ If you have admin access to your computer, use the installer. If you don't (for 
 12. In the file explorer window from step 6, click on the path bar (just to the right of these arrows: :arrow_left::arrow_right::arrow_up:. This should highlight a line that looks something like this: C:\Users\cpdup\JDKs\jdk-14.0.2+12
 13. Still in the file explorer, hit Control-C to copy this path
 14. Back in Visual Studio, where it says "java.home":"", put your cursor inside the "" after the colon, and hit Control-V to paste the path into that location
-15. Now, you will need to edit the value you just pasted, to change every \ character to \\. The entry should look something like this (with a different user name): "java.home": "C:\\Users\\cpdup\\JDKs\\jdk-14.0.2+12"
+15. Now, you will need to edit the value you just pasted, to change every `\` character to `\\`. The entry should look something like this (with a different user name): `"java.home": "C:\\Users\\cpdup\\JDKs\\jdk-14.0.2+12"`
 16. Hit Control-S to save the configuration, and then close the settings.json file
 Now you should be able to run Java programs.
 
